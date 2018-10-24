@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <audio id="greenAudio">
+        <source src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3" type="audio/mpeg"/>
+    </audio>
+
+    <audio id="redAudio">
+        <source src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3" type="audio/mpeg"/>
+    </audio>
+
+    <audio id="yellowAudio">
+        <source src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3" type="audio/mpeg"/>
+    </audio>
+
+    <audio id="blueAudio">
+        <source src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3" type="audio/mpeg"/>
+    </audio>
+
+    <div class="container">
+        <div class="row">
+            <button class="col-xs-6 buttonAnimate" id="green"></button>
+            <button class="col-xs-6 buttonAnimate" id="red"></button>
+        </div>
+        <div class="row">
+            <button class="col-xs-6 buttonAnimate" id="yellow"></button>
+            <button class="col-xs-6 buttonAnimate" id="blue"></button>
+        </div>
+        <div class="centerPiece">
+            <p class="title">SAM SAYS</p>
+            <div class="gameDisplay">
+                <p id="gameDisplayText">&nbsp;</p>
+            </div>
+            <div class="row buttonRow">
+                <div class="col-xs-6">
+                    <button class="myButton buttonAnimate" id="startButton"></button>
+                    <p class="myButtonText">START</p>
+                </div>
+                <div class="col-xs-6">
+                    <button class="myButton buttonAnimate" id="strictButton"></button>
+                    <p class="myButtonText">STRICT</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p class="myFooter"><i class="fa fa-code" aria-hidden="true" style="font-size: 20px;"></i> by <a href="https://www.linkedin.com/in/samlegros/" target="_blank">Sam Legros</a></p>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+<script src="scripts/script.js"></script>
+</html>
